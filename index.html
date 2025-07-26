@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz app JS</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Step 1: User Input -->
+  <div class="step1">
+    <h1>The Qu<span>easy</span></h1>
+    <hr>
+    <div class="input-section">
+      <h2>Enter your name</h2>
+      <input id="quiz-input" type="text" placeholder="Enter your name">
+      <h2>Select the category of questions</h2>
+      <select id="quiz-select">
+        <option value="" disabled selected>Choose the category</option>
+      </select>
+    </div>
+    <button class="next">Next question</button>
+  </div>
+
+  <!-- Step 2: Quiz Area -->
+  <div class="step2">
+    <div class="quiz">
+      <h1 id="quiz-number">Quiz 1</h1>
+      <hr>
+    </div>
+    <div class="question-section">
+      <div class="question">
+        <p id="greetings"></p>
+        <h3 id="question-txt">The question goes here</h3>
+      </div>
+      <div class="answers">
+        <!-- Answer buttons will be injected here -->
+      </div>
+    </div>
+    <button class="next-quiz">Next question</button>
+  </div>
+
+</body>
+</html>
+
